@@ -15,7 +15,7 @@ const Signup = () => {
         e.preventDefault();
         let data = { name, phonenumber, email, password, confirmpassword };
 
-        //using fetch
+        //Method 1 - using fetch
         // if (name && phonenumber && email && (password === confirmpassword)) {
         //     let fetching = async () => {
         //         try {
