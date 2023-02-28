@@ -15,10 +15,9 @@ const Signup = () => {
         e.preventDefault();
         let data = { name, phonenumber, email, password, confirmpassword };
 
-        //Method 1 - using fetch
+        //using fetch
         // if (name && phonenumber && email && (password === confirmpassword)) {
         //     let fetching = async () => {
-        
         //         try {
         //             let response = await fetch('http://localhost:4000/signup', {
         //                 method: 'POST',
