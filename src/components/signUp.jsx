@@ -51,41 +51,45 @@ const Signup = () => {
         }
     }
     return (
-        <div className="">
-            <Navbar />
-            <div className="container p-4">
-                <div className="card w-50 mx-auto my-2 shadow">
-                    <div className="card-body">
-                        <div className="signup">
-                            <h1>Sign Up</h1>
-                            <div className="signup_form">
-                                <form action="" onSubmit={handlesubmit}>
-                                    <div className="Name my-4">
-                                        <input type="text" className="form-control" value={name} onChange={(e) => { setName(e.target.value) }} name="name" placeholder="Enter your name" />
-                                    </div>
-                                    <div className="mobile_number my-4">
-                                        <input type="text" className="form-control" value={phonenumber} onChange={(e) => { setPhonenumber(e.target.value) }} name="number" placeholder="Enter your Mobile Number" />
-                                    </div>
-                                    <div className="email my-4">
-                                        <input type="email" className="form-control" value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Enter your email" />
-                                    </div>
-                                    <div className="password my-4">
-                                        <input type="password" className="form-control" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Enter your password" />
-                                    </div>
-                                    <div className="confirm_password my-4">
-                                        <input type="password" className="form-control" value={confirmpassword} onChange={(e) => { setConfirmpassword(e.target.value) }} name="confirm_password" placeholder="Enter your confirm-password" />
-                                    </div>
-                                    <div className="sign_button my-2">
-                                        <button className="btn btn-primary">Signup</button>
-                                    </div>
-                                    <div className="login_button">
-                                        <div className="row">
-                                            <div className="col-md-12"><p>Already a user?</p>
-                                                <Link to="/" className="btn btn-outline-primary">Login</Link>
+        <div className="mt-5">
+            {/* <Navbar /> */}
+            <div className="container p-4 text-center">
+                <div className="row">
+                    <div className="col-sm-12 col-lg-6" style={{ float: 'none', margin: 'auto' }}>
+                        <div className="card mx-auto my-2 shadow">
+                            <div className="card-body">
+                                <div className="signup">
+                                    <h1>Sign Up</h1>
+                                    <div className="signup_form">
+                                        <form action="" onSubmit={handlesubmit}>
+                                            <div className="Name my-4">
+                                                <input type="text" className="form-control" value={name} onChange={(e) => { setName(e.target.value) }} name="name" placeholder="Enter your name" />
                                             </div>
-                                        </div>
+                                            <div className="mobile_number my-4">
+                                                <input type="text" className="form-control" value={phonenumber} onChange={(e) => { setPhonenumber(e.target.value) }} name="number" placeholder="Enter your Mobile Number" />
+                                            </div>
+                                            <div className="email my-4">
+                                                <input type="email" className="form-control" value={email} onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Enter your email" />
+                                            </div>
+                                            <div className="password my-4">
+                                                <input type="password" className="form-control" value={password} onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Enter your password" />
+                                            </div>
+                                            <div className="confirm_password my-4">
+                                                <input type="password" className="form-control" value={confirmpassword} onChange={(e) => { setConfirmpassword(e.target.value) }} name="confirm_password" placeholder="Enter your confirm-password" />
+                                            </div>
+                                            <div className="sign_button my-2">
+                                                <button className="btn btn-primary">Signup</button>
+                                            </div>
+                                            <div className="login_button">
+                                                <div className="row">
+                                                    <div className="col-md-12"><p>Already a user?</p>
+                                                        <Link to="/" className="btn btn-outline-primary">Login</Link>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
