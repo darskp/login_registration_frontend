@@ -8,7 +8,6 @@ const AddPost = () => {
     let [summary, setSummary] = useState('');
     let [image, setImage] = useState('');
     let [location, setLocation] = useState('');
-
     let addPosthandle = (e) => {
         e.preventDefault();
         let data = { author, title, summary, image, location }
@@ -59,7 +58,8 @@ const AddPost = () => {
                                         <input type="text" className="form-control" value={location} onChange={(e) => { setLocation(e.target.value) }} name="location" placeholder="Location of the post" />
                                     </div>
                                     <div className="my-4">
-                                        <Link to="#" className="btn btn-success">Add Post</Link>
+                                        {/* <Link to="/" className="btn btn-success">Add Post</Link> */}
+                                        <button className="btn btn-success">Add Post</button>
                                     </div>
                                 </form>
                             </div>
